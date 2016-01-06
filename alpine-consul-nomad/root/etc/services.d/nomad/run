@@ -1,3 +1,6 @@
 #!/usr/bin/with-contenv sh
 
-exec s6-setuidgid nomad nomad agent -config /etc/nomad/conf.d/;
+# Bind to the external (LAN) IP
+EXTERNAL_IP=`awk 'NR==1 {print $1}' /etc/hosts`
+
+exec s6-setuidgid nomad nomad agent -bind=${EXTERNAL_IP} -config /etc/nomad/conf.d/;
