@@ -1,0 +1,12 @@
+{
+    "service": {
+        "name": "nomad-server",
+        "port": 4647,
+        "checks": [
+            {
+                "script": "nomad agent-info > /dev/null 2>&1 || exit 2",
+                "interval": "5s"
+            }
+        ]
+    }
+}
