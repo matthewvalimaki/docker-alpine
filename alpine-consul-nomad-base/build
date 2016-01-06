@@ -1,0 +1,1 @@
+docker build -t smebberson/alpine-consul-nomad-base /vagrant/alpine-consul-nomad-base
