@@ -1,0 +1,1 @@
+docker build -t smebberson/user-consul-nomad-agent /vagrant/examples/user-consul-nomad-agent

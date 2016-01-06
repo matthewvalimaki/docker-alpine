@@ -2,4 +2,4 @@
 
 # running as root because "The exec driver can only be run when on Linux and running Nomad as root."
 # See: https://www.nomadproject.io/docs/drivers/exec.html
-exec nomad agent -config /etc/nomad/conf.d/nomad.conf;
+exec nomad agent -config /etc/nomad/conf.d/;

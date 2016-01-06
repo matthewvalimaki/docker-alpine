@@ -1,0 +1,1 @@
+docker run --rm --link user-consul:consul-agent --name user-consul-nomad smebberson/user-consul-nomad

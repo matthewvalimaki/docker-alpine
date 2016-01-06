@@ -1,4 +1,4 @@
-FROM smebberson/alpine-consul-base:1.1.0
+FROM smebberson/alpine-consul-base
 MAINTAINER Scott Mebberson <scott@scottmebberson.com>
 
 ENV NOMAD_VERSION=0.2.3
