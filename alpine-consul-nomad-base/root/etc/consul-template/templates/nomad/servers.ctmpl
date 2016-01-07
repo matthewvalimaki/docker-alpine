@@ -1,0 +1,4 @@
+#!/bin/sh
+{{if service "nomad-server"}}
+curl -s -X POST "http://127.0.0.1:4646/v1/agent/servers?{{range service "nomad-server"}}address={{.Address}}:{{.Port}}&{{end}}"
+{{end}}

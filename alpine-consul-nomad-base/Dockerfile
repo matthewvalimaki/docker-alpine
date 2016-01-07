@@ -1,8 +1,10 @@
 FROM smebberson/alpine-consul-nomad
 MAINTAINER Scott Mebberson <scott@scottmebberson.com>
 
-# This file comes from base image and is not needed with Nomad client configuration
-RUN rm /etc/consul/conf.d/nomad.json
+# Remove file from base image (not needed with Nomad client) and install client specific needs
+RUN apk add --update curl && \
+    rm -rf /var/cache/apk/* && \
+    rm /etc/consul/conf.d/nomad.json
 
 # Add the files
 ADD root /

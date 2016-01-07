@@ -1,12 +1,12 @@
-# alpine-consul-base
+# alpine-consul-nomad-base
 
-This file contains all software versions, that correspond to a version of this image itself. Read more about the [alpine-consul-base image here][alpineconsulbase].
+This file contains all software versions, that correspond to a version of this image itself. Read more about the [alpine-consul-nomad-base image here][alpineconsulnomadbase].
 
 ## Latest
 
 Same as v1.1.0.
 
-Usage: `smebberson/alpine-consul-base` or `smebberson/alpine-consul-base:latest`.
+Usage: `smebberson/alpine-consul-nomad-base` or `smebberson/alpine-consul-nomad-base:latest`.
 
 ## v1.1.0
 
@@ -20,6 +20,6 @@ Usage: `smebberson/alpine-consul-base:1.1.0`.
 
 Usage: `smebberson/alpine-consul-base:1.0.0`.
 
-[alpineconsulbase]: https://github.com/smebberson/docker-alpine/tree/master/alpine-consul-base
+[alpineconsulnomadbase]: https://github.com/smebberson/docker-alpine/tree/master/alpine-consul-nomad-base
 [alpineconsul]: https://github.com/smebberson/docker-alpine/tree/master/alpine-consul
 [smebbersonalpineconsul100]: https://github.com/smebberson/docker-alpine/tree/df6ba86de86a325fd3544bedfbdf932829feb9d8/alpine-consul

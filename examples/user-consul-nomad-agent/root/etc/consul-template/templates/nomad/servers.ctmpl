@@ -1,9 +1,0 @@
-{{if service "nomad-server"}}
-client {
-  servers {
-    {{range service "nomad-server"}}
-      "{{.Address}}:{{.Port}}"
-    {{end}}
-  }
-}
-{{end}}
