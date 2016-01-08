@@ -21,7 +21,7 @@ RUN export GOPATH=/go PATH=$PATH:/go/bin && \
     apk del go git gcc musl-dev make bash zip && \
     rm -rf /var/cache/apk/* && \
     addgroup nomad && \
-    adduser -D -G nomad nomad && \
+    adduser -D -s /bin/sh -G nomad nomad && \
     mkdir -p /data/nomad && \
     chown -R nomad:nomad /data/nomad
 
