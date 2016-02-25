@@ -1,5 +1,8 @@
 #!/usr/bin/with-contenv sh
 
+# Bind to the external (LAN) IP
+EXTERNAL_IP=`awk 'NR==1 {print $1}' /etc/hosts`
+
 # running as root because "The exec driver can only be run when on Linux and running Nomad as root."
 # See: https://www.nomadproject.io/docs/drivers/exec.html
-exec nomad agent -config /etc/nomad/conf.d/;
+exec nomad agent -bind=${EXTERNAL_IP} -config /etc/nomad/conf.d/;

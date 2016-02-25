@@ -1,7 +1,7 @@
 FROM smebberson/alpine-consul-base
 MAINTAINER Scott Mebberson <scott@scottmebberson.com>
 
-ENV NOMAD_VERSION=0.2.3
+ENV NOMAD_VERSION=0.3.0-rc2
 
 # Download and install Nomad
 # We are building it ourselves, because Alpine Linux doesn't use glibc
